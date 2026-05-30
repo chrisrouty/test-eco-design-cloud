@@ -4,11 +4,12 @@ import { ButtonProps, ButtonSize, ButtonVariant } from './type'
 
 const variantStyles: Record<ButtonVariant, string> = {
   primary: 'border border-white/10 bg-primary text-content-main hover:bg-primary-hover focus-visible:ring-primary',
-  link: 'border border-transparent bg-transparent text-content-main hover:text-content-muted focus-visible:ring-white',
+  link: 'border border-none text-content-main hover:underline hover:underline-offset-4',
 }
 
 const sizeStyles: Record<ButtonSize, string> = {
-  md: 'h-[40px] rounded-[8px] px-[12px] py-[8px] text-sm font-semibold flex items-center gap-2',
+  sm: 'h-[28px] p-[4px] text-sm font-semibold flex items-center gap-2',
+  md: 'h-[40px] rounded-[8px] px-[12px] py-[8px] text-sm font-semibold flex items-center',
 }
 
 export const Button = (props: ButtonProps): JSX.Element => {

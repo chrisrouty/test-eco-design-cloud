@@ -28,9 +28,10 @@ export const Breadcrumb = ({ items, className }: BreadcrumbProps): JSX.Element =
 
               {item.href && !isCurrent ? (
                 <Button
-                  className="h-auto p-0 text-content-muted"
+                  className="text-content-muted"
                   href={item.href}
                   variant="link"
+                  size="sm"
                 >
                   {item.label}
                 </Button>

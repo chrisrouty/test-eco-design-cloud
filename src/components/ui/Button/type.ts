@@ -1,7 +1,7 @@
 import { AnchorHTMLAttributes, ButtonHTMLAttributes } from 'react'
 
 export type ButtonVariant = 'primary' | 'link'
-export type ButtonSize = 'md'
+export type ButtonSize = 'sm' | 'md'
 
 type BaseButtonProps = {
   variant?: ButtonVariant

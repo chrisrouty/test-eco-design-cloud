@@ -4,6 +4,7 @@ import {Paragraph} from "../components/ui/Paragraph";
 import {Line} from "../components/ui/Line";
 import {Button} from "../components/ui/Button";
 import {Plus} from "lucide-react";
+import clsx from "clsx";
 
 export const CurrentProjects = () => {
   return (
@@ -14,10 +15,13 @@ export const CurrentProjects = () => {
           { label: 'My current projects' },
         ]}
       />
-      <div className="flex items-end justify-between gap-2">
-        <div className="flex flex-col gap-1.5 w-full">
+      <div className={clsx(
+        'flex flex-col gap-2',
+        'md:flex-row md:items-end md:justify-between',
+      )}>
+        <div className="flex flex-col gap-2 w-full">
           <Title level={1}>My current projects</Title>
-          <Paragraph>This feature shows a list of all the projects you are currently working on.</Paragraph>
+          <Paragraph size="sm">This feature shows a list of all the projects you are currently working on.</Paragraph>
         </div>
         <div className="shrink-0">
           <Button>
