@@ -1,0 +1,1 @@
+export const Line = () => <div className="w-full h-px bg-white/10" />
