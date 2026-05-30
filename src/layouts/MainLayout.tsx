@@ -1,5 +1,5 @@
 import clsx from 'clsx'
-import { HomeView } from '../views/HomeView'
+import { CurrentProjects } from '../views/currentProjects'
 
 const mainClassName = clsx(
   'min-h-screen bg-background p-6 text-foreground',
@@ -10,7 +10,7 @@ const mainClassName = clsx(
 export const MainLayout = () => {
   return (
     <main className={mainClassName}>
-      <HomeView />
+      <CurrentProjects />
     </main>
   )
 }

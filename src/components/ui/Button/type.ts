@@ -11,11 +11,13 @@ type BaseButtonProps = {
 export type ButtonAsButtonProps = BaseButtonProps &
   ButtonHTMLAttributes<HTMLButtonElement> & {
     href?: never
+    disabled?: boolean
   }
 
 export type ButtonAsAnchorProps = BaseButtonProps &
   AnchorHTMLAttributes<HTMLAnchorElement> & {
     href: string
+    disabled?: boolean
   }
 
 export type ButtonProps = ButtonAsButtonProps | ButtonAsAnchorProps
