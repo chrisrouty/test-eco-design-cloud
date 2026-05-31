@@ -2,7 +2,7 @@ import clsx from 'clsx'
 import { CurrentProjects } from '../views/currentProjects'
 
 const mainClassName = clsx(
-  'min-h-screen bg-background p-6 text-foreground',
+  'min-h-screen bg-background p-6',
   'sm:p-8',
   'md:p-10',
 )

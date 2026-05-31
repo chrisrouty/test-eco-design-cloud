@@ -1,20 +1,29 @@
-import {Button} from "../../../../components/ui/Button";
-import {FilterIcon} from "lucide-react";
-import clsx from "clsx";
+import { FilterIcon } from 'lucide-react'
+import { memo } from 'react'
+import { Select } from '../../../../components/ui/Input/Select/intex'
+import { ProductFilterProps, ProductScoreFilter } from './type'
 
-export const ProductFilter = () => {
+const filterOptions: Array<{
+  label: string;
+  value: ProductScoreFilter;
+}> = [
+  { label: 'Tous', value: 'all' },
+  { label: 'A-B', value: 'A-B' },
+  { label: 'C-D', value: 'C-D' },
+  { label: 'E', value: 'E' },
+]
 
-	const classes = clsx(
-		'hidden',
-		'md:inline-block',
-	);
+export const ProductFilter = memo(({ value, onChange }: ProductFilterProps) => {
 
-	return (
-		<div>
-			<Button variant="glass">
-				<FilterIcon />
-				<span className={classes}>Filter</span>
-			</Button>
-		</div>
-	)
-}
+  return (
+    <div className="inline-flex items-center gap-2">
+      <FilterIcon aria-hidden="true" className="size-4" />
+      <Select
+        onChange={onChange}
+        options={filterOptions}
+        value={value}
+        size="md"
+      />
+    </div>
+  )
+})
