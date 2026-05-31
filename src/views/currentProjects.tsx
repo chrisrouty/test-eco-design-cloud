@@ -5,6 +5,7 @@ import {Line} from "../components/ui/Line";
 import {Button} from "../components/ui/Button";
 import {Plus} from "lucide-react";
 import clsx from "clsx";
+import {ProductList} from "../features/products/ProductList";
 
 export const CurrentProjects = () => {
   return (
@@ -35,6 +36,11 @@ export const CurrentProjects = () => {
         </div>
       </div>
       <Line />
+      <div className={clsx(
+        'bg-black/24 border border-white/10 p-4 rounded-lg',
+      )}>
+        <ProductList />
+      </div>
     </div>
   )
 }

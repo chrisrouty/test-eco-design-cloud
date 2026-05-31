@@ -1,6 +1,6 @@
 import { AnchorHTMLAttributes, ButtonHTMLAttributes } from 'react'
 
-export type ButtonVariant = 'primary' | 'link'
+export type ButtonVariant = 'primary' | 'secondary' | 'outlined' | 'glass' | 'link'
 export type ButtonSize = 'sm' | 'md'
 
 type BaseButtonProps = {

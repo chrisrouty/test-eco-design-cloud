@@ -2,14 +2,13 @@
 
 @theme {
   --color-background: oklch(21.41% 0.006 203.04);
-  --color-surface: oklch(27.87% 0.008 214.34);
-  --color-surface-muted: oklch(25.32% 0.004 203.04);
-  --color-border-muted: oklch(34.29% 0.004 203.04);
   --color-primary: oklch(52.74% 0.141 154.52);
   --color-primary-hover: oklch(55.27% 0.165 152.02);
+  --color-secondary: oklch(52.74% 0.141 154.52);
+  --color-secondary-hover: oklch(52.74% 0.141 154.52);
+  --color-glass: oklch(27.87% 0.008 214.34);
 
   --color-content-main: oklch(97.24% 0.001 247.84);
-  --color-content-muted: oklch(60.67% 0.005 240.43);
   --color-content-paragraph: oklch(85.34% 0.002 240.43);
 }
 
