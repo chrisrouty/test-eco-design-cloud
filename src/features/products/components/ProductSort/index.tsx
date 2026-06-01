@@ -20,6 +20,8 @@ export const ProductSort = memo(({ value, onChange }: ProductSortProps) => {
       options={sortOptions}
       value={value}
       size="md"
+      id="productSort"
+      name="productSort"
     />
   )
 })

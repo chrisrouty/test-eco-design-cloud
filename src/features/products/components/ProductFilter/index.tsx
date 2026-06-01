@@ -22,6 +22,8 @@ export const ProductFilter = memo(({ value, onChange }: ProductFilterProps) => {
         options={filterOptions}
         value={value}
         size="md"
+        id="productFilter"
+        name="productFilter"
       />
     </div>
   )

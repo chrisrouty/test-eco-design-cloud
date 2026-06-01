@@ -24,7 +24,13 @@ export const ProductPaginate = () => {
 
 			<div className="flex items-center gap-2">
 				<Label className={classes}>Row par page :</Label>
-				<Select onChange={setPageSize} options={pageSizeOptions} value={pageSize} />
+				<Select
+					onChange={setPageSize}
+					options={pageSizeOptions}
+					value={pageSize}
+					id="rowsPerPage"
+					name="rowsPerPage"
+				/>
 			</div>
 
 			<div className="flex items-center gap-3">
