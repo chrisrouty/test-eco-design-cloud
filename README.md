@@ -1,6 +1,6 @@
 # Eco Design Cloud
 
-Le projet est organisé autour d’une séparation entre les composants UI réutilisables et les composants métier pour éviter la duplication.
+Le projet est organisé autour d’une séparation entre les composants UI réutilisables et les composants métier pour éviter la duplication. J'ai pris en compte la navigation clavier avec les focus-visible sur les buttons/inputs.
 
 Dans _src/components/ui_, on retrouve les composants génériques comme Button, Modal, Card, Label, Title, etc. L’idée est que ces composants ne connaissent pas le domaine produit, ils servent uniquement à construire l’interface.
 
