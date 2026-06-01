@@ -1,10 +1,9 @@
 import clsx from 'clsx'
 import { JSX } from 'react'
-import { ButtonAsAnchorProps, ButtonAsButtonProps, ButtonProps, ButtonSize, ButtonVariant } from './type'
+import { ButtonProps, ButtonSize, ButtonVariant } from './type'
 
 const variantStyles: Record<ButtonVariant, string> = {
   primary: 'border border-white/10 bg-primary text-content-main hover:bg-primary-hover focus-visible:ring-primary',
-  link: 'border border-none text-content-main hover:underline hover:underline-offset-4',
 
   secondary: 'border border-black/20 bg-white text-black hover:bg-primary-hover focus-visible:ring-white',
 
@@ -24,6 +23,7 @@ export const Button = (props: ButtonProps): JSX.Element => {
     size = 'md',
     className = '',
     disabled,
+    ...buttonProps
   } = props
 
   const classes = clsx(
@@ -35,33 +35,13 @@ export const Button = (props: ButtonProps): JSX.Element => {
     className,
   )
 
-  if (props.href) {
-    const { children: anchorChildren, className: anchorClassName, disabled: anchorDisabled, size: anchorSize, variant: anchorVariant, ...anchorProps } = props as ButtonAsAnchorProps
-
-    return (
-      <a
-        aria-disabled={anchorDisabled}
-        className={classes}
-        {...anchorProps}
-      >
-        {children}
-      </a>
-    )
-  }
-
-  else {
-    const { children: buttonChildren, className: buttonClassName, disabled: buttonDisabled, size: buttonSize, variant: buttonVariant, ...buttonProps } = props as ButtonAsButtonProps
-
-    return (
-      <button
-        className={classes}
-        disabled={disabled}
-        {...buttonProps}
-      >
-        {children}
-      </button>
-    )
-  }
-
-
+  return (
+    <button
+      className={classes}
+      disabled={disabled}
+      {...buttonProps}
+    >
+      {children}
+    </button>
+  )
 }

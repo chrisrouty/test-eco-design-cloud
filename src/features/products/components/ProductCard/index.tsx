@@ -4,7 +4,7 @@ import { Card } from '../../../../components/ui/Card'
 import { Label } from "../../../../components/ui/Label";
 import { Title } from '../../../../components/ui/Title'
 import { ProductCardProps } from './type'
-import { ecoScoreClassName } from '../../../../utils/ecoScoreColors'
+import { ecoScoreClassName } from '../../../../utils/ecoScoreClassName'
 import { ProductModal } from '../ProductModal'
 
 export const ProductCard = memo(({ product }: ProductCardProps) => {

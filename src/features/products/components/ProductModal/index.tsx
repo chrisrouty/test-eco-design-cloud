@@ -1,6 +1,6 @@
 import { Modal } from '../../../../components/ui/Modal'
 import { Label } from '../../../../components/ui/Label'
-import { ecoScoreClassName } from '../../../../utils/ecoScoreColors'
+import { ecoScoreClassName } from '../../../../utils/ecoScoreClassName'
 import { pefMetrics } from './pefMetrics'
 import { ProductModalProps } from './type'
 
