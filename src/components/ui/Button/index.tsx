@@ -1,6 +1,6 @@
 import clsx from 'clsx'
 import { JSX } from 'react'
-import { ButtonProps, ButtonSize, ButtonVariant } from './type'
+import { ButtonAsAnchorProps, ButtonAsButtonProps, ButtonProps, ButtonSize, ButtonVariant } from './type'
 
 const variantStyles: Record<ButtonVariant, string> = {
   primary: 'border border-white/10 bg-primary text-content-main hover:bg-primary-hover focus-visible:ring-primary',
@@ -36,10 +36,13 @@ export const Button = (props: ButtonProps): JSX.Element => {
   )
 
   if (props.href) {
+    const { children: anchorChildren, className: anchorClassName, disabled: anchorDisabled, size: anchorSize, variant: anchorVariant, ...anchorProps } = props as ButtonAsAnchorProps
+
     return (
       <a
-        aria-disabled={disabled}
+        aria-disabled={anchorDisabled}
         className={classes}
+        {...anchorProps}
       >
         {children}
       </a>
@@ -47,10 +50,13 @@ export const Button = (props: ButtonProps): JSX.Element => {
   }
 
   else {
+    const { children: buttonChildren, className: buttonClassName, disabled: buttonDisabled, size: buttonSize, variant: buttonVariant, ...buttonProps } = props as ButtonAsButtonProps
+
     return (
       <button
         className={classes}
         disabled={disabled}
+        {...buttonProps}
       >
         {children}
       </button>

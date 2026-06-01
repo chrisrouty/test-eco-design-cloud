@@ -1,4 +1,4 @@
-import { EcoScore } from '../../../../types/products'
+import { EcoScore } from '../types/products'
 
 export const ecoScoreClassName: Record<EcoScore, string> = {
   A: 'bg-emerald-500/20 text-emerald-200 ring-1 ring-emerald-400/40',

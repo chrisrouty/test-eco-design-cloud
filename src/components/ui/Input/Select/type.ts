@@ -13,4 +13,6 @@ export interface SelectProps<Value extends string = string>
   value: Value
   onChange: (value: Value) => void
   size?: SelectSize
+  id: string
+  name: string
 }

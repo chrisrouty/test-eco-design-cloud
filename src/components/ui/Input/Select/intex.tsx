@@ -1,6 +1,7 @@
 import clsx from 'clsx'
 import { ChangeEvent, JSX, useCallback } from 'react'
 import { SelectProps, SelectSize } from './type'
+import {FilterIcon} from "lucide-react";
 
 const sizeStyles: Record<SelectSize, string> = {
   sm: 'h-8 rounded-sm px-3 text-xs',
@@ -13,6 +14,8 @@ export const Select = <Value extends string>({
   onChange,
   size = 'sm',
   className,
+  id = 'select',
+  name = 'select',
   ...props
 }: SelectProps<Value>): JSX.Element => {
 

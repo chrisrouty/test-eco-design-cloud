@@ -1,4 +1,4 @@
-import { Breadcrumb } from '../components/ui/Breadcrumb'
+import { Breadcrumb } from '../components/ui/Breadcrumb';
 import {Title} from "../components/ui/Title";
 import {Paragraph} from "../components/ui/Paragraph";
 import {Line} from "../components/ui/Line";
@@ -29,7 +29,6 @@ export const CurrentProjects = () => {
             <Plus
               aria-hidden="true"
               className="size-5 text-content-main"
-              strokeWidth={2.4}
             />
             Create a new project
           </Button>
