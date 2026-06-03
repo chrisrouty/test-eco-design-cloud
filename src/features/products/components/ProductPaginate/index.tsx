@@ -20,9 +20,15 @@ export const ProductPaginate = () => {
 	);
 
 	return (
-		<div className="flex items-center justify-between bg-black/24 p-3 rounded-b-lg">
+		<div className={clsx(
+			'flex flex-col items-center justify-between bg-black/24 p-3 rounded-b-lg gap-2',
+			'md:flex-row'
+		)}>
 
-			<div className="flex items-center gap-2">
+			<div className={clsx(
+				'flex items-center gap-2 w-full',
+				'md:gap-3 md:w-fit'
+			)}>
 				<Label className={classes}>Row per page :</Label>
 				<Select
 					onChange={setPageSize}
@@ -30,10 +36,14 @@ export const ProductPaginate = () => {
 					value={pageSize}
 					id="rowsPerPage"
 					name="rowsPerPage"
+					className="w-full"
 				/>
 			</div>
 
-			<div className="flex items-center gap-3">
+			<div className={clsx(
+				'flex items-center gap-1',
+				'md:gap-3'
+			)}>
 				<Button variant="glass" size="sm">
 					<ChevronsLeft /> <span className={classes}>First page</span>
 				</Button>
@@ -41,7 +51,10 @@ export const ProductPaginate = () => {
 					<ChevronLeft /> <span className={classes}>Previous page</span>
 				</Button>
 
-				<div className="flex items-center gap-3">
+				<div className={clsx(
+					'flex items-center gap-1',
+					'md:gap-3'
+				)}>
 					<Button variant="glass" size="sm" className="bg-primary-hover">1</Button>
 					<Button variant="glass" size="sm">2</Button>
 					<Button variant="glass" size="sm">3</Button>
