@@ -3,7 +3,7 @@ import { ChevronRight } from 'lucide-react'
 import { JSX } from 'react'
 import { BreadcrumbProps } from './type'
 
-export const Breadcrumb = ({ items, className }: BreadcrumbProps): JSX.Element => {
+export const Breadcrumb = ({ items, className }: BreadcrumbProps) => {
 
   return (
     <nav aria-label="Breadcrumb" className={className}>

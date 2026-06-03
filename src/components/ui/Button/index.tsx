@@ -14,7 +14,7 @@ const sizeStyles: Record<ButtonSize, string> = {
   md: 'h-[40px] rounded-[8px] px-4 py-2 text-sm font-semibold flex items-center',
 }
 
-export const Button = (props: ButtonProps): JSX.Element => {
+export const Button = (props: ButtonProps) => {
   const {
     children,
     variant = 'primary',

@@ -11,7 +11,7 @@ export const Card = ({
   variant = 'default',
   className,
   ...props
-}: CardProps): JSX.Element => {
+}: CardProps) => {
   return (
     <div
       className={clsx(

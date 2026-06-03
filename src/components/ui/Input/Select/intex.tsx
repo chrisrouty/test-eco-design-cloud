@@ -17,7 +17,7 @@ export const Select = <Value extends string>({
   id = 'select',
   name = 'select',
   ...props
-}: SelectProps<Value>): JSX.Element => {
+}: SelectProps<Value>) => {
 
   const handleChange = useCallback((event: ChangeEvent<HTMLSelectElement>) => {
     onChange(event.target.value as Value)

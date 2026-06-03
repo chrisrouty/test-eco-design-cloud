@@ -23,7 +23,7 @@ export const Title = ({
   level = 1,
   className,
   ...props
-}: TitleProps): JSX.Element => {
+}: TitleProps) => {
   const Component = titleTags[level]
 
   return (

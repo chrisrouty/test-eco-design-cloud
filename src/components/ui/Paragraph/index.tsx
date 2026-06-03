@@ -18,7 +18,7 @@ export const Paragraph = ({
   color = 'default',
   className,
   ...props
-}: ParagraphProps): JSX.Element => {
+}: ParagraphProps) => {
   return (
     <p
       className={

@@ -11,7 +11,7 @@ export const Modal = ({
   isOpen,
   onClose,
   title
-}: ModalProps): JSX.Element => {
+}: ModalProps) => {
 
   const dialogRef = useRef<HTMLDialogElement>(null)
 

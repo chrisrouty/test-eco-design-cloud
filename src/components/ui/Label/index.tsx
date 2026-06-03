@@ -11,7 +11,7 @@ export const Label = ({
   className,
   children,
   ...props
-}: LabelProps): JSX.Element => {
+}: LabelProps) => {
   return (
     <label
       className={clsx(
