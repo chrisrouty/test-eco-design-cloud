@@ -3,6 +3,7 @@ import { Label } from '../../../../components/ui/Label'
 import { ecoScoreClassName } from '../../../../utils/ecoScoreClassName'
 import { pefMetrics } from './pefMetrics'
 import { ProductModalProps } from './type'
+import {Button} from "../../../../components/ui/Button";
 
 export const ProductModal = ({
   isOpen,
@@ -39,6 +40,11 @@ export const ProductModal = ({
               </span>
             </div>
           ))}
+        </div>
+        <div className="flex items-center justify-end">
+          <Button onClick={onClose}>
+            Fermer
+          </Button>
         </div>
       </div>
     </Modal>

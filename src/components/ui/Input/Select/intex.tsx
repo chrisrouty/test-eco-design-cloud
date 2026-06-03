@@ -26,7 +26,7 @@ export const Select = <Value extends string>({
   return (
     <select
       className={clsx(
-        'border border-white/10 bg-white/10 text-content-main transition-colors cursor-pointer',
+        'border border-white/10 bg-white/10 text-content-main transition-colors cursor-pointer w-full',
         'focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background',
         sizeStyles[size],
         className,

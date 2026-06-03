@@ -4,9 +4,7 @@ import { ButtonProps, ButtonSize, ButtonVariant } from './type'
 
 const variantStyles: Record<ButtonVariant, string> = {
   primary: 'border border-white/10 bg-primary text-content-main hover:bg-primary-hover focus-visible:ring-primary',
-
   secondary: 'border border-black/20 bg-white text-black hover:bg-primary-hover focus-visible:ring-white',
-
   glass: 'border border-white/10 bg-glass/20 text-content-main hover:bg-primary-hover focus-visible:ring-primary',
   outlined: 'border border-white/10 bg-primary text-content-main hover:bg-primary-hover focus-visible:ring-primary',
 }

@@ -8,6 +8,7 @@ import { ProductScoreFilter } from './components/ProductFilter/type'
 import { ProductPaginate } from './components/ProductPaginate'
 import { ProductSort } from './components/ProductSort'
 import { ProductSortValue } from './components/ProductSort/type'
+import clsx from "clsx";
 
 const scoreValue: Record<EcoScore, number> = {
 	A: 1,
@@ -67,11 +68,20 @@ export const ProductList = () => {
 
 	return (
 		<>
-			<div className="flex items-center justify-between py-3 gap-3">
-				<div className="w-full max-w-108">
+			<div className={clsx(
+				'flex flex-col items-center justify-between py-3 gap-3',
+				'md:flex-row'
+			)}>
+				<div className={clsx(
+					'w-full',
+					'md:max-w-108'
+				)}>
 					<TextField />
 				</div>
-				<div className="flex items-center gap-2">
+				<div className={clsx(
+					'flex items-center gap-2 w-full',
+					'md:w-fit'
+				)}>
 					<ProductFilter onChange={setScoreFilter} value={scoreFilter} />
 					<ProductSort onChange={setProductSort} value={productSort} />
 				</div>

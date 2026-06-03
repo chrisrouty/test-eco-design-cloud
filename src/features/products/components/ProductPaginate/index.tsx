@@ -16,7 +16,7 @@ export const ProductPaginate = () => {
 
 	const classes = clsx(
 		'hidden',
-		'md:inline-block',
+		'lg:inline-block',
 	);
 
 	return (
@@ -42,7 +42,7 @@ export const ProductPaginate = () => {
 				</Button>
 
 				<div className="flex items-center gap-3">
-					<Button variant="glass" size="sm">1</Button>
+					<Button variant="glass" size="sm" className="bg-primary-hover">1</Button>
 					<Button variant="glass" size="sm">2</Button>
 					<Button variant="glass" size="sm">3</Button>
 				</div>

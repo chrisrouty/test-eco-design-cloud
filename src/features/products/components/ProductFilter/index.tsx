@@ -16,7 +16,7 @@ const filterOptions: Array<{
 export const ProductFilter = memo(({ value, onChange }: ProductFilterProps) => {
 
   return (
-    <div className="inline-flex items-center gap-2">
+    <div className="inline-flex items-center gap-2 w-full">
       <Select
         onChange={onChange}
         options={filterOptions}
