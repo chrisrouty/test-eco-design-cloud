@@ -15,7 +15,7 @@ export const ProductPaginate = () => {
 	const [pageSize, setPageSize] = useState('10')
 
 	const classes = clsx(
-		'hidden',
+		'hidden whitespace-nowrap',
 		'lg:inline-block',
 	);
 
@@ -23,7 +23,7 @@ export const ProductPaginate = () => {
 		<div className="flex items-center justify-between bg-black/24 p-3 rounded-b-lg">
 
 			<div className="flex items-center gap-2">
-				<Label className={classes}>Row par page :</Label>
+				<Label className={classes}>Row per page :</Label>
 				<Select
 					onChange={setPageSize}
 					options={pageSizeOptions}
