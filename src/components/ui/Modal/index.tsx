@@ -31,7 +31,7 @@ export const Modal = ({
       ref={dialogRef}
       onClose={onClose}
       className={clsx(
-        'top-1/2 left-1/2 -translate-1/2 relative max-h-[90vh] w-full max-w-[95%] md:max-w-xl flex-col overflow-hidden rounded-lg',
+        'fixed inset-0 m-auto max-h-[90vh] w-full max-w-[95%] md:max-w-xl flex-col overflow-hidden rounded-lg',
         'text-content-main border border-white/10 bg-background shadow-2xl p-0',
         'backdrop:bg-black/60 backdrop:backdrop-blur-sm',
         className,
